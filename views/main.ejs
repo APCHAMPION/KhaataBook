@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+   <div class="nav-bar">
+        <div class="logo">
+            <a href="/"><h4>KhataBook</h4></a>
+        </div>
+        <div class="right">
+            <a href="/">Home</a>
+            <a href="/createNew">Create New Hisaab</a>
+        </div>
+   </div>
+
+   <div class="hero">
+        <div class="hero-title">
+            <p>All Hisaab Kitaab</p>
+            
+        </div>
+        <% files.forEach((file)=> { %>
+            <div class="hero-content">
+                <div class="record">
+                    <a href="/hisaab/<%=file%>" class="hisaab">
+                        <div class="record-left" >
+                        <p><%=file.substring(0,9)%></p>
+                        <i class="ri-arrow-right-line"></i>
+                        </div>
+                    </a>
+                    <div class="record-right">
+                        <a href="/edit/<%= file %>"><i class="ri-pencil-line"></i></a>
+                        <a href="" onclick="confirmDelete('<%= file %>')"><i class="ri-delete-bin-line" class="delete"></i></a>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+   </div>
+</body>
+
+<script>
+    function confirmDelete(filename) {
+            if (confirm('Are you sure you want to delete ' + filename + '?')) {
+                window.location.href = '/delete/' + filename;
+            }
+        }
+</script>
+</html>

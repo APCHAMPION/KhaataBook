@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/edit.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="log">
+            <h4>KhataBook</h4>
+        </div>
+        <div class="right">
+            <a href="/">Home</a>
+            <a href="/createNew">Create New Hisaab</a>
+        </div>
+    </div>
+
+    <form action="/update/<%=filename%>" method="post" class="form">
+        <div class="hisaab-heading">
+            <h3>Create your hisaab for <%=filename%> date</h3>
+        </div>
+        <div class="form-content">
+            <textarea name="fileData" id="text-area"><%=filedata%></textarea>
+            <button class="btn-1">Edit</button>
+        </div>
+    </form>
+</body>
+
+</html>

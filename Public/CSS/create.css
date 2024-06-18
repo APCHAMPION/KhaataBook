@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40vw;
+    margin-top: 10px;
+}
+.log h4{
+    font-size: 2vw;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.nav-bar .right{
+    display: flex;
+    gap: 3vw;
+}
+
+.nav-bar .right a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+.form{
+    margin-left: 9vw;
+    margin-top: 5vh;
+}
+
+.form .hisaab-heading{
+    font-size: 20px;
+}
+
+.form-content{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.form-content #text-area{
+    height: 50vh;
+    border: 2px solid gray;
+    text-decoration: none;
+}
+
+.form-content .btn-1{
+    margin-top: 2vh;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 136, 255);
+    font-size: 20px;
+}

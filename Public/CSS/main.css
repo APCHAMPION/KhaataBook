@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40vw;
+    margin-top: 10px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo  h4{
+    font-size: 2vw;
+    font-weight: 100;
+    cursor: pointer;
+    color: #000;
+}
+
+.nav-bar .right{
+    display: flex;
+    gap: 3vw;
+}
+
+.nav-bar .right a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+.hero{
+    width: 85vw;
+    margin-left: 9vw;
+    margin-top: 50px;
+}
+
+.hero-title p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.hero-content{
+    background: rgb(0, 136, 255);
+    width: 25vw;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.record{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hisaab{
+    text-decoration: none;
+}
+.record-left{
+    display: flex;
+    color: white;
+    gap: 20px;
+}
+
+.record-left p{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.record-left i{
+    background: white;
+    color: rgb(0, 136, 255);
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.record-right{
+    color: white;
+    
+}
+
+.record-right a{
+    text-decoration: none;
+    color: white;
+}
+
+.record-right .ri-pencil-line{
+    cursor: pointer;
+}
+.record-right .ri-delete-bin-line{
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background: white;
+    color: red;
+    cursor: pointer;
+}

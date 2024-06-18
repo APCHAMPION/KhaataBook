@@ -1,0 +1,4 @@
+daal = 40kg
+rice = 30kg
+aata = 50kg
+milk = 4kg
