@@ -1,0 +1,5 @@
+daal  = 20kg
+chini = 30kg
+namak = 2kg
+haldi = 1kg
+laal mirch = 2kg

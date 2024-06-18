@@ -11,12 +11,17 @@
     gap: 40vw;
     margin-top: 10px;
 }
-.log h4{
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo  h4{
     font-size: 2vw;
     font-weight: 100;
     cursor: pointer;
+    color: #000;
 }
-
 .nav-bar .right{
     display: flex;
     gap: 3vw;
